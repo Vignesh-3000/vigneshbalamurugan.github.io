@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Vignesh Balamurugan — Stibo STEP Consultant, MDM/PIM, AI & Automation, Integration and CI/CD.">
+<title>Vignesh Balamurugan — Stibo STEP Consultant</title>
+<style>
+:root{
+  --bg:#07111f; --bg2:#0b1728; --panel:#0e1d31; --panel2:#12263d;
+  --text:#f4f7fb; --muted:#a9b8c9; --line:rgba(180,205,230,.16);
+  --cyan:#8ee8f5; --cyan2:#55cfe4; --blue:#7da7ff; --white:#fff;
+  --max:1180px; --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 75% 15%,rgba(44,111,156,.18),transparent 28%),linear-gradient(180deg,#07111f 0%,#081525 55%,#06101c 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),calc(100% - 48px));margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(7,17,31,.78);backdrop-filter:blur(18px);z-index:20}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.02em}
+.navlinks{display:flex;gap:30px;color:#dce6f1;font-weight:650;font-size:14px}
+.navlinks a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid rgba(142,232,245,.65);border-radius:11px;color:var(--cyan);font-weight:750;background:rgba(142,232,245,.05)}
+.btn:hover{background:rgba(142,232,245,.12)}
+.hero{padding:86px 0 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:62px;align-items:center}
+.kicker{color:var(--cyan);font-size:14px;font-weight:800;letter-spacing:.02em;margin-bottom:18px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(58px,7vw,92px);line-height:.96;letter-spacing:-.055em;margin:0 0 28px;font-weight:500}
+h1 em{font-style:italic;color:#f8fbff}
+.hero-copy{font-size:18px;color:#d1dce8;max-width:650px}
+.hero-copy strong{color:white}
+.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.primary{background:var(--cyan);color:#082033;border-color:var(--cyan)}
+.primary:hover{background:#b7f4fb}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:48px}
+.stat{padding:18px 10px;border-top:1px solid var(--line)}
+.stat strong{display:block;font-size:21px;color:white}
+.stat span{display:block;color:var(--muted);font-size:11px;line-height:1.35;margin-top:4px}
+.diagram-wrap{background:linear-gradient(145deg,rgba(21,51,78,.9),rgba(8,22,38,.85));border:1px solid var(--line);border-radius:26px;padding:18px;box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.diagram{width:100%;height:auto;display:block}
+.section{padding:92px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:32px}
+.eyebrow{color:var(--cyan);font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.14em}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:48px;line-height:1.05;letter-spacing:-.04em;font-weight:500;margin:8px 0 0}
+.lead{max-width:620px;color:var(--muted);font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:linear-gradient(145deg,rgba(18,38,61,.92),rgba(9,24,41,.92));border:1px solid var(--line);border-radius:var(--radius);padding:27px}
+.card:hover{border-color:rgba(142,232,245,.34);transform:translateY(-2px);transition:.2s}
+.card-top{display:flex;justify-content:space-between;gap:15px;align-items:start}
+.card h3{margin:0;font-size:20px;line-height:1.25}
+.badge{white-space:nowrap;color:var(--cyan);font-size:11px;font-weight:800;border:1px solid rgba(142,232,245,.25);padding:5px 8px;border-radius:99px}
+.card p{color:var(--muted);font-size:14px}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+.tag{font-size:11px;color:#cbd8e6;border:1px solid var(--line);border-radius:99px;padding:4px 8px;background:rgba(255,255,255,.02)}
+.why{margin-top:18px;padding-top:15px;border-top:1px solid var(--line);font-size:13px;color:#dce7f2}
+.timeline{position:relative;margin-top:15px}
+.timeline:before{content:"";position:absolute;left:8px;top:10px;bottom:10px;width:1px;background:var(--line)}
+.role{position:relative;padding:0 0 35px 36px}
+.dot{position:absolute;left:3px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px rgba(142,232,245,.08)}
+.role-meta{color:var(--cyan);font-size:12px;font-weight:800}
+.role h3{margin:5px 0 2px;font-size:22px}
+.role .company{color:#d8e2ed;font-weight:700}
+.role ul{margin:12px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cap-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cap{padding:19px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.02)}
+.cap strong{display:block;margin-bottom:7px}
+.cap span{font-size:13px;color:var(--muted)}
+.contact{padding:55px 0 85px}
+.contact-box{border:1px solid rgba(142,232,245,.22);background:linear-gradient(135deg,rgba(17,45,68,.9),rgba(8,22,38,.9));border-radius:28px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.contact-box h2{font-size:42px}
+.contact-links{display:flex;gap:10px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:25px 0 35px;color:#73879b;font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:58px}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .grid,.two-col{grid-template-columns:1fr}
+  .navlinks{display:none}
+  h1{font-size:62px}
+  .section-head{display:block}
+}
+@media(max-width:600px){
+  .container{width:min(100% - 30px,var(--max))}
+  h1{font-size:50px}
+  h2{font-size:39px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cap-list{grid-template-columns:1fr}
+  .contact-box{padding:28px;display:block}
+  .contact-box h2{font-size:34px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%">
+    <a class="brand" href="#top">Vignesh Balamurugan</a>
+    <div class="navlinks">
+      <a href="#ai">AI & automation</a><a href="#delivery">Delivery</a><a href="#experience">Experience</a><a href="#skills">Capabilities</a>
+    </div>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="container hero">
+  <div>
+    <div class="kicker">Stibo STEP Consultant · MDM / PIM · Integration · AI & CI/CD</div>
+    <h1>Master data that works harder, <em>with AI built into the platform.</em></h1>
+    <p class="hero-copy">Nearly six years designing, delivering and running <strong>Stibo STEP</strong> solutions for US retail, wholesale and apparel enterprises — and, more recently, bringing <strong>generative AI</strong> into how master data is created, queried and developed.</p>
+    <div class="actions"><a class="btn primary" href="#ai">See the AI work</a><a class="btn" target="_blank" href="https://www.linkedin.com/in/vignesh-balamurugan-362032184">LinkedIn profile</a></div>
+    <div class="stats">
+      <div class="stat"><strong>~6 yrs</strong><span>Stibo STEP / MDM / PIM</span></div>
+      <div class="stat"><strong>4</strong><span>Platform upgrades</span></div>
+      <div class="stat"><strong>2</strong><span>Enterprise programmes</span></div>
+      <div class="stat"><strong>APP 240</strong><span>Data Modeling certified</span></div>
+      <div class="stat"><strong>AI + MDM</strong><span>Active PoCs & accelerators</span></div>
+    </div>
+  </div>
+
+  <div class="diagram-wrap">
+    <svg class="diagram" viewBox="0 0 620 590" role="img" aria-label="Stibo STEP ecosystem diagram">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1"><stop stop-color="#9cf0f7"/><stop offset="1" stop-color="#72c8ff"/></linearGradient>
+        <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-opacity=".25"/></filter>
+      </defs>
+      <g stroke="#7fabc4" stroke-width="2" opacity=".9">
+        <line x1="310" y1="295" x2="105" y2="95"/><line x1="310" y1="295" x2="310" y2="70"/><line x1="310" y1="295" x2="515" y2="95"/>
+        <line x1="310" y1="295" x2="545" y2="295"/><line x1="310" y1="295" x2="515" y2="500"/><line x1="310" y1="295" x2="310" y2="525"/>
+        <line x1="310" y1="295" x2="105" y2="500"/><line x1="310" y1="295" x2="75" y2="295"/>
+      </g>
+      <g fill="#8ee8f5" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="14" text-anchor="middle">
+        <rect x="216" y="238" width="188" height="114" rx="18" fill="url(#g)" filter="url(#shadow)"/>
+        <text x="310" y="282" fill="#092033" font-size="20">Stibo STEP</text><text x="310" y="307" fill="#17384b" font-size="13">MDM · PIM · Vendor</text>
+        <g fill="#dffaff" font-size="13">
+          <rect x="24" y="55" width="164" height="70" rx="14" fill="#163652"/><text x="106" y="84">MCP Server</text><text x="106" y="105">Copilot · 2026.2</text>
+          <rect x="228" y="24" width="164" height="70" rx="14" fill="#163652"/><text x="310" y="53">AI content generation</text><text x="310" y="74">GenAI · product copy</text>
+          <rect x="432" y="55" width="164" height="70" rx="14" fill="#163652"/><text x="514" y="84">AI chatbot</text><text x="514" y="105">via Stibo DaaS</text>
+          <rect x="455" y="260" width="145" height="70" rx="14" fill="#163652"/><text x="527" y="289">Power BI</text><text x="527" y="310">audit reporting</text>
+          <rect x="432" y="465" width="164" height="70" rx="14" fill="#163652"/><text x="514" y="494">Informatica</text><text x="514" y="515">onboarding · files</text>
+          <rect x="228" y="500" width="164" height="70" rx="14" fill="#163652"/><text x="310" y="529">GitHub CI/CD</text><text x="310" y="550">release · promotion</text>
+          <rect x="24" y="465" width="164" height="70" rx="14" fill="#163652"/><text x="106" y="494">AI-assisted dev</text><text x="106" y="515">VS Code · GPT/Codex</text>
+          <rect x="10" y="260" width="150" height="70" rx="14" fill="#163652"/><text x="85" y="289">Azure SQL</text><text x="85" y="310">AMF · JDBC</text>
+        </g>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section id="ai" class="section container">
+  <div class="section-head"><div><div class="eyebrow">AI & automation</div><h2>Practical AI for enterprise MDM.</h2></div><p class="lead">Ongoing PoCs, accelerators and hands-on initiatives focused on measurable MDM engineering problems — with governance and human approval kept in the loop.</p></div>
+  <div class="grid">
+    <article class="card"><div class="card-top"><h3>AI Product Content & Attribute Enrichment</h3><span class="badge">Ongoing</span></div><p>Generative AI drafts product descriptions, marketing copy and attribute values from governed STEP master data. Outputs can flow through STEP workflows for steward review.</p><div class="tags"><span class="tag">GenAI</span><span class="tag">Prompt design</span><span class="tag">STEP workflows</span><span class="tag">Data stewardship</span></div><div class="why"><b>Why it matters:</b> turns manual enrichment into a reviewed, repeatable process.</div></article>
+    <article class="card"><div class="card-top"><h3>Conversational MDM Assistant via Stibo DaaS</h3><span class="badge">PoC</span></div><p>Natural-language assistant for vendor, product and hierarchy questions using Stibo DaaS APIs as the governed source — avoiding direct database access and stale copies.</p><div class="tags"><span class="tag">Stibo DaaS</span><span class="tag">REST/API</span><span class="tag">LLM orchestration</span><span class="tag">Governance</span></div><div class="why"><b>Why it matters:</b> self-service master-data access for business users.</div></article>
+    <article class="card"><div class="card-top"><h3>AI-Assisted STEP Development</h3><span class="badge">Active</span></div><p>GPT/Codex workflow inside VS Code, grounded in project standards, STEP business-rule patterns and JavaScript conventions. Jira stories are translated into controlled implementation output.</p><div class="tags"><span class="tag">GPT/Codex</span><span class="tag">VS Code</span><span class="tag">JavaScript</span><span class="tag">Harness design</span></div><div class="why"><b>Why it matters:</b> faster implementation with repeatable engineering standards.</div></article>
+    <article class="card"><div class="card-top"><h3>STEP MCP Server & Copilot Agent</h3><span class="badge">STEP 2026.2</span></div><p>Hands-on configuration of STEP MCP Server and Copilot integration as a foundation for governed agent-based operations such as data-quality checks, onboarding and guided remediation.</p><div class="tags"><span class="tag">MCP</span><span class="tag">Copilot</span><span class="tag">STEP 2026.2</span><span class="tag">Agentic MDM</span></div><div class="why"><b>Why it matters:</b> moves MDM automation toward agent-assisted operations.</div></article>
+    <article class="card"><div class="card-top"><h3>Integration Mapping Root-Cause Analyzer</h3><span class="badge">PoC</span></div><p>AI-assisted investigation of downstream integration issues by validating source data in STEP, checking mappings and explaining likely breakpoints.</p><div class="tags"><span class="tag">Mapping validation</span><span class="tag">Root cause</span><span class="tag">Integration</span></div></article>
+    <article class="card"><div class="card-top"><h3>STEP Support Assistance AI</h3><span class="badge">PoC</span></div><p>Support assistant for L2/L3 teams to analyse business-rule code, validator errors, logs and ticket context and produce structured troubleshooting guidance.</p><div class="tags"><span class="tag">Support AI</span><span class="tag">STEP rules</span><span class="tag">Error analysis</span><span class="tag">SNOW/Jira</span></div></article>
+    <article class="card"><div class="card-top"><h3>STEP Impact & Dependency Analyzer</h3><span class="badge">PoC</span></div><p>AI-assisted analysis of dependencies between STEP objects, rules, Web UI components, APIs and configurations to support safer changes, releases and upgrades.</p><div class="tags"><span class="tag">Dependencies</span><span class="tag">Upgrade impact</span><span class="tag">APIs</span></div></article>
+    <article class="card"><div class="card-top"><h3>Deployment Reconciliation & Remediation</h3><span class="badge">PoC</span></div><p>Analyse invalid or inconsistent records, compare expected versus actual state and generate guided remediation actions for deployment and consumption issues.</p><div class="tags"><span class="tag">Reconciliation</span><span class="tag">Data quality</span><span class="tag">Remediation</span></div></article>
+    <article class="card"><div class="card-top"><h3>AI-Assisted Vendor / Product Onboarding</h3><span class="badge">Ongoing</span></div><p>Suggest attribute mappings and enrichment during supplier onboarding while retaining human approval and enterprise governance.</p><div class="tags"><span class="tag">Attribute mapping</span><span class="tag">Supplier onboarding</span><span class="tag">Human-in-loop</span></div></article>
+    <article class="card"><div class="card-top"><h3>AI Upgrade Impact Analysis</h3><span class="badge">Ongoing</span></div><p>Analyse upgrade changes for deprecated APIs, Web UI components and implementation patterns to identify likely migration work before platform upgrades.</p><div class="tags"><span class="tag">Upgrade analysis</span><span class="tag">Deprecated APIs</span><span class="tag">Migration</span></div></article>
+  </div>
+</section>
+
+<section id="delivery" class="section container">
+  <div class="section-head"><div><div class="eyebrow">Delivery</div><h2>Enterprise STEP delivery, end to end.</h2></div><p class="lead">Implementation, integration, platform ownership, upgrades, support and release management across enterprise MDM/PIM programmes.</p></div>
+  <div class="grid">
+    <article class="card"><div class="card-top"><h3>Vendor MDM — US Retail & Wholesale</h3><span class="badge">STEP 10.2 → 2024.3 → 2026.2</span></div><p>Designed data models, business rules, validations, workflows, Web UI and import/export. Automated vendor processes and led L2/L3 support with Stibo Systems.</p></article>
+    <article class="card"><div class="card-top"><h3>AMF → JDBC → Azure SQL</h3><span class="badge">Integration</span></div><p>Designed STEP-to-Azure SQL connectivity for audit and enterprise reporting, supporting large-volume MDM analysis and Power BI dashboards.</p></article>
+    <article class="card"><div class="card-top"><h3>STEP CI/CD & Release Management</h3><span class="badge">GitHub</span></div><p>Introduced GitHub-based CI/CD for STEP configuration and code, owning deployment planning, validation and environment promotion.</p></article>
+    <article class="card"><div class="card-top"><h3>Multi-Brand PIM — US Apparel</h3><span class="badge">STEP 9.1 → 11.0</span></div><p>Delivered centralised PIM for multiple brands, built workflows and integrations, ran UAT and supported the upgrade replacing deprecated APIs and Web UI components.</p></article>
+  </div>
+</section>
+
+<section id="experience" class="section container">
+  <div class="section-head"><div><div class="eyebrow">Experience</div><h2>From implementation to platform ownership.</h2></div></div>
+  <div class="timeline">
+    <div class="role"><span class="dot"></span><div class="role-meta">AUG 2023 — PRESENT · CHENNAI, INDIA</div><h3>Stibo STEP Consultant / MDM Specialist</h3><div class="company">Mastech InfoTrellis Pvt. Ltd.</div><ul><li>Vendor MDM implementation and support across STEP 10.2, 2024.3 and 2026.2.</li><li>Led migration, testing, integration validation and stabilisation across major upgrades.</li><li>Built AI-assisted development, MCP/Copilot integration and GitHub CI/CD capabilities.</li><li>Worked with Product Owners, BAs, QA and business stakeholders to translate requirements into scalable STEP solutions.</li></ul></div>
+    <div class="role"><span class="dot"></span><div class="role-meta">FEB 2021 — JUL 2023 · CHENNAI, INDIA</div><h3>Stibo MDM Developer</h3><div class="company">Tata Consultancy Services Pvt. Ltd.</div><ul><li>PIM implementation for multiple brands of a major US apparel organisation on STEP 9.1 / 11.0.</li><li>Configured workflows, business rules, Web UI, integrations, user groups and privileges.</li><li>Prepared technical designs and unit-test cases; conducted client demonstrations and UAT.</li></ul></div>
+  </div>
+</section>
+
+<section id="skills" class="section container">
+  <div class="section-head"><div><div class="eyebrow">Capabilities</div><h2>Depth on STEP. Breadth around it.</h2></div></div>
+  <div class="cap-list">
+    <div class="cap"><strong>Stibo STEP</strong><span>MDM, PIM, Vendor MDM, data modelling, hierarchies, business & validation rules, workflows, Web UI, import/export, event management, privileges, SaaS, upgrades, L2/L3 support.</span></div>
+    <div class="cap"><strong>Integration & Data</strong><span>AMF, JDBC, Azure SQL, REST/API, Stibo DaaS, Informatica, file-based integration, SQL, reconciliation, audit reporting, Power BI.</span></div>
+    <div class="cap"><strong>AI & Engineering</strong><span>Generative AI, GPT/Codex, MCP, Copilot, AI-assisted code generation, prompt engineering, harness design, JavaScript, STEP rules and automation.</span></div>
+    <div class="cap"><strong>DevOps & Delivery</strong><span>GitHub, CI/CD, release management, deployment planning, configuration migration, Jira, Agile/Scrum and environment promotion.</span></div>
+    <div class="cap"><strong>Consulting & Leadership</strong><span>Solution design, requirements analysis, stakeholder management, technical documentation, UAT, client demos, team leadership, mentoring and training.</span></div>
+    <div class="cap"><strong>Domains</strong><span>Retail and wholesale vendor master data, multi-brand apparel PIM, audit and enterprise reporting.</span></div>
+  </div>
+  <div class="two-col" style="margin-top:18px">
+    <div class="card"><h3>Certification</h3><p><strong>Stibo Systems Certified — APP 240: Data Modeling</strong><br>STEP data model design covering object types, attributes, hierarchies, references and governance patterns.</p></div>
+    <div class="card"><h3>Education</h3><p><strong>B.E. Electrical & Electronics Engineering</strong><br>Sengunthar Engineering College, Namakkal, Tamil Nadu.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact container">
+  <div class="contact-box">
+    <div><div class="eyebrow">Get in touch</div><h2>Let’s build smarter master data.</h2><p style="color:var(--muted);max-width:600px">Open to senior Stibo STEP, MDM Consultant, Technical/Solution Consultant and AI-enabled data roles.</p></div>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:vigneshbalamurugan99@gmail.com">Email me</a>
+      <a class="btn" target="_blank" href="https://www.linkedin.com/in/vignesh-balamurugan-362032184">LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="container"><span>© Vignesh Balamurugan</span><span>Stibo STEP · MDM/PIM · AI & Automation · Chennai, India</span></footer>
+</body>
+</html>
